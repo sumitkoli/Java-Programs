@@ -5,26 +5,25 @@ import java.util.*;
 public class test1 {
 
 	public void reverse() {
-		int i,j;
 
-		int a[]=new int[] {1,2,3,4,2,1,3,5,6,5};
-
-		System.out.println("Duplicate number are : ");
-
-		for(i=0;i<a.length;i++) {
-
-			for(int k=i+1;k<a.length;k++) {
-
-				if(a[i]==a[k]) {
-					System.out.println(+a[k]);
-				}
-			}
+		int n1=0,n2=1;
+		int n3,i;
+		int n=10;
+		System.out.print(+n1+" "+n2);
+		for(i=1;i<n;i++) {
+			n3=n2+n1;
+			System.out.print(" "+n3);
+			n1=n2;
+			n2=n3;
+			
 		}
+		
+		
 	}
 
 	public static void main(String[] args) {
 
-		test1 rev=new test1();
+		test1 rev = new test1();
 		rev.reverse();
 
 	}
