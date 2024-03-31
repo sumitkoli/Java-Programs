@@ -1,30 +1,33 @@
 package Codes;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public class test1 {
 
 	public void reverse() {
 
-		int n1=0,n2=1;
-		int n3,i;
-		int n=10;
-		System.out.print(+n1+" "+n2);
-		for(i=1;i<n;i++) {
-			n3=n2+n1;
-			System.out.print(" "+n3);
-			n1=n2;
-			n2=n3;
+		String str ="ssdd@@0";
+		String rev ="";
+		int inc = 0;
+		
+		for(int  i=0;i<str.length();i++) {
 			
+			rev =str.charAt(i)+rev;
 		}
+		
+		System.out.println(rev);
 		
 		
 	}
 
 	public static void main(String[] args) {
 
-		test1 rev = new test1();
-		rev.reverse();
-
+		test1 t1 = new test1();
+		t1.reverse();
 	}
 }

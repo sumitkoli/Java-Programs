@@ -1,4 +1,4 @@
-package Codes;
+package String_Programs;
 
 public class Reverse_String {
 
